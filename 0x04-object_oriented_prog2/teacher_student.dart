@@ -13,7 +13,7 @@ class teacher
 
   void print_tr_info()
   {
-    print("Name: $name\nage: $age\nSubject: $subject");
+    print("Name: $name\nAge: $age\nSubject: $subject");
 
   }
 }
@@ -31,6 +31,14 @@ class student
   }
   void print_student_info()
   {
-    print("name: $name\nAge: $age\nGrade-level: $gradelevel");
+    print("Name: $name\nAge: $age\nGrade-level: $gradelevel");
   }
+}
+
+void main()
+{
+  var tr_me = teacher('Rie', 29, 'Life-Skills');
+  var student_me = student('Ac rie', 4, 7);
+  tr_me.print_tr_info();
+  student_me.print_student_info();
 }
